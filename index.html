@@ -3,30 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Pages Site</title>
+    <title>Arvind Chitra Rajasekaran - Software Engineer</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            margin: 0;
+            padding: 0;
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
-        h1 {
-            color: #2c3e50;
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
         }
-        .content {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+        .profile-intro {
+            margin-bottom: 40px;
+        }
+
+        .fun-fact {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffeeba;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 2px solid white;
+            transition: all 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            background: white;
+            color: var(--primary-color);
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Welcome to My GitHub Pages Site</h1>
-        <p>Hello! This is my GitHub Pages website. I'm just getting started, but stay tuned for updates!</p>
+    <header>
+        <div class="container">
+            <h1>Arvind Chitra Rajasekaran</h1>
+            <p>Staff Engineer & Full Stack Developer</p>
+            <div class="contact-links">
+                <a href="mailto:arvindcr4@gmail.com">Email</a>
+                <a href="http://www.linkedin.com/in/arvindcr">LinkedIn</a>
+                <a href="http://www.github.com/arvindcr4">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section profile-intro">
+            <h2>Hello, World! 👋</h2>
+            <p>I'm a results-driven software engineer who loves turning complex problems into elegant solutions. When I'm not coding, you might find me swimming laps or capturing moments through my camera lens!</p>
+            
+            <div class="fun-fact">
+                <strong>Fun Fact:</strong> I've helped save companies 50% in costs by migrating to the cloud, which is like being a financial superhero, but with more typing and less cape-wearing! 🦸‍♂️
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>What I Do Best 🚀</h2>
+            <div class="skills">
+                <span class="skill-tag">Full Stack Development</span>
+                <span class="skill-tag">Cloud Architecture</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Blockchain</span>
+                <span class="skill-tag">IoT</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Career Highlights ✨</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Staff Engineer at Diligent Governance</h3>
+                    <p>Led the charge in migrating from Azure to AWS, making systems run smoother than a well-oiled machine!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Principal Developer at First American India</h3>
+                    <p>Bug hunter extraordinaire in .NET core C# applications</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Software Developer at Ancestry.com</h3>
+                    <p>Helped millions connect with their roots while saving the company 50% in costs. Talk about a family-friendly approach to tech!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Academic Adventures 📚</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>M.Tech in Data Science & AI</h3>
+                    <p>PES University, Bangalore (Currently pursuing)</p>
+                    <p><strong>Current Projects:</strong></p>
+                    <!-- Space for future PESU projects -->
+                </div>
+                <div class="timeline-item">
+                    <h3>M.S. in Computer Science</h3>
+                    <p>University of California, Santa Barbara</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>B.Eng. in Electrical and Electronics</h3>
+                    <p>Anna University, Chennai</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Tech Arsenal 🛠️</h2>
+            <div class="skills">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Beyond the Code 🌟</h2>
+            <p>When I'm not saving companies millions or hunting down elusive bugs, you'll find me:</p>
+            <ul>
+                <li>🏊‍♂️ Swimming laps (probably thinking about code optimization while doing so)</li>
+                <li>📸 Capturing life's moments through photography</li>
+                <li>📚 Getting lost in good literature</li>
+                <li>🗣️ Speaking in English and Tamil (because why limit yourself to just programming languages?)</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
